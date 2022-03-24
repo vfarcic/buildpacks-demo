@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+set -eo pipefail
+
+if [[ ! -f config.toml ]]; then
+    echo "---> 111"
+    exit 100
+fi
+
+echo "---> 222"
+exit 0
